@@ -1,4 +1,4 @@
-package br.edu.iftm.tag.entitie;
+package br.edu.iftm.tag.entitie.dtos;
 
 import br.edu.iftm.tag.entitie.enums.Status;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,6 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TagDTO {
-
     private String codigo;
     private String cpf;
 }

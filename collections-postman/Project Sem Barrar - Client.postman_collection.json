@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "2860a294-38a9-4415-89bf-9aca0175df96",
+		"name": "Project Sem Barrar - Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18455606"
+	},
+	"item": [
+		{
+			"name": "Find All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/client/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/client/clients/findid/6362b5dee6844267ff9ac1e2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients",
+						"findid",
+						"6362b5dee6844267ff9ac1e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Cpf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/client/clients/findcpf/56755574389",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients",
+						"findcpf",
+						"56755574389"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/client/clients/639fcc74a3e4d333a33d5fe0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients",
+						"639fcc74a3e4d333a33d5fe0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Clients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Joana Silva Sauro\",\r\n    \"cpf\": \"45345678966\",\r\n    \"email\": \"joanasilvasauro@gmail.com\",\r\n    \"address\": \"Av Dos Asteroides, 801 - Jd Patrícia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/client/clients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deduct Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"12345678909\",\r\n    \"establishmentValue\": 190.00\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/client/clients/deduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients",
+						"deduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"639e7bfa5216960d8ae79f5d\",\r\n    \"name\": \"Ana Silva Sauro Bezerra\",\r\n    \"cpf\": \"12345678567\",\r\n    \"email\": \"bezerrasauroana@gmail.com\",\r\n    \"address\": \"Av Das Americas, 987 - Jd das Acacias\",\r\n    \"balance\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/client/clients/63930e1b24865423b1f1cd36",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"client",
+						"clients",
+						"63930e1b24865423b1f1cd36"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MessageConfig {
 
-    @Value("${establishment.rabbitmq.exchange}")
+    @Value("${sem-barrar.rabbitmq.exchange}")
     String exchange;
 
     @Bean

@@ -1,6 +1,8 @@
 package br.edu.iftm.establishment.controller;
 
 import br.edu.iftm.establishment.entitie.Establishment;
+import br.edu.iftm.establishment.entitie.EstablishmentAccess;
+import br.edu.iftm.establishment.entitie.dtos.CodigoTagDTO;
 import br.edu.iftm.establishment.service.EstablishmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +31,16 @@ public class EstablishmentController {
     @PostMapping
     public Establishment create(@Valid @RequestBody Establishment establishment) {
         return establishmentService.create(establishment);
+    }
+
+    @PostMapping("authorizeentry")
+    public EstablishmentAccess authorizeEntry(@RequestBody CodigoTagDTO codigoTag) {
+        return establishmentService.authorizeEntry(codigoTag);
+    }
+
+    @PostMapping("authorizeexit")
+    public EstablishmentAccess authorizeExit(@RequestBody CodigoTagDTO codigoTag) {
+        return establishmentService.authorizeExit(codigoTag);
     }
 
     @PutMapping("{id}")

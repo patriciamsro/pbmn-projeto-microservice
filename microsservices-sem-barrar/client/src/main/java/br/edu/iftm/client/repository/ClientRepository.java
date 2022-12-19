@@ -10,6 +10,6 @@ import java.util.Optional;
 @Repository
 public interface ClientRepository extends MongoRepository<Client, String> {
 
-    @Query("findcpf/{cpf:?0}")
+    @Query("{cpf:?0}")
     Optional<Client> findByCpf(String cpf);
 }

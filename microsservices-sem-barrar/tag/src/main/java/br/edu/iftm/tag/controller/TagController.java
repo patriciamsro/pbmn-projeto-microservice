@@ -1,7 +1,7 @@
 package br.edu.iftm.tag.controller;
 
 import br.edu.iftm.tag.entitie.Tag;
-import br.edu.iftm.tag.entitie.TagDTO;
+import br.edu.iftm.tag.entitie.dtos.TagDTO;
 import br.edu.iftm.tag.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "d5e30302-4d7e-449f-9598-b4911085d2b0",
+		"name": "Project Sem Barrar  - Tag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18455606"
+	},
+	"item": [
+		{
+			"name": "Find All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/tag/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/tag/tags/findid/638d09106b74a1318d964c10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags",
+						"findid",
+						"638d09106b74a1318d964c10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Cod",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/tag/tags/findcod/xpto6224",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags",
+						"findcod",
+						"xpto6224"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/tag/tags/639e79e4d40dfa656",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags",
+						"639e79e4d40dfa656"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"639e79e4d40dfa656c36fbf0\",\r\n        \"codigo\": \"xpto2580\",\r\n        \"status\": \"INACTIVE\",\r\n        \"lastModified\": \"2022-12-18T02:24:36.280+00:00\",\r\n        \"cpf\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/tag/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BindTagToClient",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"codigo\": \"xpto3951\",\r\n        \"cpf\": \"45345678966\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/tag/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Disable Tags",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/tag/tags/createtags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags",
+						"createtags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/tag/tags/638d09106b74a1318d964c10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"tag",
+						"tags",
+						"638d09106b74a1318d964c10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

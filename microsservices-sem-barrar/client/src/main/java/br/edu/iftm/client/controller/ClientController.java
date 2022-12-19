@@ -1,6 +1,8 @@
 package br.edu.iftm.client.controller;
 
 import br.edu.iftm.client.entitie.Client;
+import br.edu.iftm.client.entitie.dtos.ClientDebtDTO;
+import br.edu.iftm.client.entitie.dtos.ClientDebtResponseDTO;
 import br.edu.iftm.client.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/clients")
@@ -54,4 +55,8 @@ public class ClientController {
         clientService.deleteById(id);
     }
 
+    @PostMapping("/deduct")
+    public ClientDebtResponseDTO deductBalance(@RequestBody ClientDebtDTO clientDebtDTO) {
+        return clientService.deductBalance(clientDebtDTO);
+    }
 }

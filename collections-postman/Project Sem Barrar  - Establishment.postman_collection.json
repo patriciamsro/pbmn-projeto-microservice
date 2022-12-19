@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "724698a7-4d5b-429e-bacb-8691d7522926",
+		"name": "Project Sem Barrar  - Establishment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18455606"
+	},
+	"item": [
+		{
+			"name": "Find All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments/636ed332ec5d461c8616d9f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments",
+						"636ed332ec5d461c8616d9f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Estabelecimento Teste\",\r\n    \"cnpj\": \"12345678000199\",\r\n    \"endereco\":\"Av. Brasil, 123 - Morada da Colina, Uberlandia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authorize Entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": \"xpto3951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments/authorizeentry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments",
+						"authorizeentry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authorize Exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": \"xpto3951\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments/authorizeexit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments",
+						"authorizeexit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Estabelecimento Teste 1\",\r\n\"cnpj\": \"65345677000132\",\r\n\"endereco\": \"Av. Brasil, 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments/636ed332ec5d461c8616d9f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments",
+						"636ed332ec5d461c8616d9f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/establishment/establishments/63699afbfc539f0597604119",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"establishment",
+						"establishments",
+						"63699afbfc539f0597604119"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
