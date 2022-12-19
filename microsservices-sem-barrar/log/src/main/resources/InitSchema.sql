@@ -1,0 +1,2 @@
+--db_log_sembarrar
+--db.createCollection("logs", { capped: true, size: 1024, max: 50})
