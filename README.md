@@ -27,8 +27,8 @@ A arquitetura é composta por quatro micoserviços `(Client, Establishment, Tag 
     * Lombok
     * Postman
 
-### Diagrama de Casos de Uso
+### Diagrama da arquitetura de microserviços:
 
-Este diagrama busca representar a interação do sistema como um todo:
+Este diagrama busca representar a arquitetura utilizada nesta aplicação:
 
-![Diagrama Casos de Uso](diagrams/diagrama%20uc-sem-barrar.drawio.png)
+![Diagrama Microserviços](diagrams/ms-sem-barrar.png)
